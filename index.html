@@ -71,7 +71,7 @@
                                 <div id="divAlready2" name="divAlready2" data-sf-role="form-container" class="comp1-form">
                                     <input type="hidden" data-sf-role="form-id" value="7727d807-6dcf-491c-9cdb-a3aced4ec365" name="FormId">
                                     <!-- <form action="https://glow.sapublichosting.com/tdapp/distracteddriving?sf_cntrl_id=ctl00%24Contentplaceholder1%24C002" method="POST" name="defaultFormctl00$Contentplaceholder1$C002" enctype="multipart/form-data" role="form"> -->
-                                    <form action="" method="POST" name="" enctype="multipart/form-data" role="form">
+                                    <form enctype="multipart/form-data" role="form" name="submit-to-google-sheet">
                                         <div class="form-group" data-sf-role="navigation-field-container">
                                             <input type="hidden" data-sf-role="step-of-resources" value="Step {0} of {1}">
                                             <ol data-sf-role="sr-progressbar" class="sf-FormNav" tabindex="0" role="progressbar" aria-valuemin="1" aria-valuemax="3" aria-valuenow="1" aria-valuetext="Step 1 of 3: Step 1">
@@ -171,7 +171,7 @@
                                                                 <input data-sf-role="violation-restrictions" type="hidden" value="{&quot;maxLength&quot;:&quot;255&quot;, &quot;minLength&quot;: &quot;0&quot;}">
                                                                 <input data-sf-role="violation-messages" type="hidden" value="{&quot;maxLength&quot;:&quot;Name field must be less than 255 characters&quot;, &quot;required&quot;: &quot;Name field input is required&quot;, &quot;invalid&quot;: &quot;Entry is not valid!&quot;, &quot;regularExpression&quot;: &quot;Name field input is invalid&quot;}">
                                                                 <label class="h6" for="Textbox-1">Name</label>
-                                                                <input id="Textbox-1" type="text" class="form-control" name="TextFieldController_2" placeholder="Name (Required)" value="" aria-required="true" data-sf-role="text-field-input" required="required" pattern=".{0,255}">
+                                                                <input id="Textbox-1" type="text" class="form-control" name="name" placeholder="Name (Required)" value="" aria-required="true" data-sf-role="text-field-input" required="required" pattern=".{0,255}">
                                                             </div>
                                                         </div>
                                                         <div id="C008_Col01" class="sf_colsIn col-lg-6" data-sf-element="Column 2" data-placeholder-label="Column 2">
@@ -179,7 +179,7 @@
                                                                 <input data-sf-role="violation-restrictions" type="hidden" value="{&quot;maxLength&quot;:&quot;255&quot;, &quot;minLength&quot;: &quot;0&quot;}">
                                                                 <input data-sf-role="violation-messages" type="hidden" value="{&quot;maxLength&quot;:&quot;Email field must be less than 255 characters&quot;, &quot;required&quot;: &quot;Email field input is required&quot;, &quot;invalid&quot;: &quot;Entry is not valid!&quot;, &quot;regularExpression&quot;: &quot;Email field input is invalid&quot;}">
                                                                 <label class="h6" for="Textbox-2">Email</label>
-                                                                <input id="Textbox-2" type="text" class="form-control" name="TextFieldController" placeholder="ex: alex@gmail.com (Required)" value="" aria-required="true" data-sf-role="text-field-input" required="required" pattern=".{0,255}">
+                                                                <input id="Textbox-2" type="text" class="form-control" name="email" placeholder="ex: alex@gmail.com (Required)" value="" aria-required="true" data-sf-role="text-field-input" required="required" pattern=".{0,255}">
                                                             </div>
                                                         </div>
                                                     </div>
@@ -192,7 +192,7 @@
                                                         <label class="h6" for="Dropdown-1">
                                              Gender
                                              </label>
-                                                        <select id="Dropdown-1" data-sf-role="dropdown-list-field-select" name="DropdownListFieldController" required="required" class="form-control" aria-required="true">
+                                                        <select id="Dropdown-1" data-sf-role="dropdown-list-field-select" name="gender" required="required" class="form-control" aria-required="true">
                                                 <option value="">- Select -</option>
                                                 <option value="Male">Male</option>
                                                 <option value="Female">Female</option>
@@ -205,7 +205,7 @@
                                                         <input data-sf-role="violation-restrictions" type="hidden" value="{&quot;maxLength&quot;:&quot;255&quot;, &quot;minLength&quot;: &quot;0&quot;}">
                                                         <input data-sf-role="violation-messages" type="hidden" value="{&quot;maxLength&quot;:&quot;Age field must be less than 255 characters&quot;, &quot;required&quot;: &quot;Age field input is required&quot;, &quot;invalid&quot;: &quot;Entry is not valid!&quot;, &quot;regularExpression&quot;: &quot;Age field input is invalid&quot;}">
                                                         <label class="h6" for="Textbox-3">Age</label>
-                                                        <input id="Textbox-3" type="text" class="form-control" name="TextFieldController_1" placeholder="Age (Required)" value="" aria-required="true" data-sf-role="text-field-input" required="required" pattern=".{0,255}">
+                                                        <input id="Textbox-3" type="text" class="form-control" name="age" placeholder="Age (Required)" value="" aria-required="true" data-sf-role="text-field-input" required="required" pattern=".{0,255}">
                                                     </div>
                                                 </div>
                                             </div>
@@ -216,7 +216,7 @@
                                                         <label class="h6" for="Dropdown-2">
                                              Region
                                              </label>
-                                                        <select id="Dropdown-2" data-sf-role="dropdown-list-field-select" name="DropdownListFieldController_0" required="required" class="form-control" aria-required="true">
+                                                        <select id="Dropdown-2" data-sf-role="dropdown-list-field-select" name="region" required="required" class="form-control" aria-required="true">
                                                 <option value="">- Select - (Required)</option>
                                                 <option value="Eastern">Eastern</option>
                                                 <option value="Central">Central</option>
@@ -232,7 +232,7 @@
                                                         <input data-sf-role="violation-restrictions" type="hidden" value="{&quot;maxLength&quot;:&quot;10&quot;, &quot;minLength&quot;: &quot;10&quot;}">
                                                         <input data-sf-role="violation-messages" type="hidden" value="{&quot;maxLength&quot;:&quot;Mobile field must be less than 10 characters&quot;, &quot;required&quot;: &quot;Mobile field input is required&quot;, &quot;invalid&quot;: &quot;Entry is not valid!&quot;, &quot;regularExpression&quot;: &quot;Mobile field input is invalid&quot;}">
                                                         <label class="h6" for="Textbox-4">Mobile</label>
-                                                        <input id="Textbox-4" type="text" class="form-control" name="TextFieldController_0" placeholder="050xxxxxxx (Required)" value="" aria-required="true" data-sf-role="text-field-input" required="required" pattern=".{10,10}">
+                                                        <input id="Textbox-4" type="text" class="form-control" name="moblie" placeholder="050xxxxxxx (Required)" value="" aria-required="true" data-sf-role="text-field-input" required="required" pattern=".{10,10}">
                                                     </div>
                                                 </div>
                                             </div>
@@ -245,7 +245,7 @@
                                                             <li>
                                                                 <label>
                                                    <input type="radio"
-                                                      name="MultipleChoiceFieldController"
+                                                      name="job"
                                                       value="an Employee"
                                                       data-sf-role="multiple-choice-field-input"
                                                       required="required" pattern=".{0,255}"
@@ -256,7 +256,7 @@
                                                             <li>
                                                                 <label>
                                                    <input type="radio"
-                                                      name="MultipleChoiceFieldController"
+                                                      name="job"
                                                       value="a Trainee"
                                                       data-sf-role="multiple-choice-field-input"
                                                       required="required" pattern=".{0,255}"
@@ -267,7 +267,7 @@
                                                             <li>
                                                                 <label>
                                                    <input type="radio"
-                                                      name="MultipleChoiceFieldController"
+                                                      name="job"
                                                       value="other"
                                                       data-sf-role="multiple-choice-field-input"
                                                       required="required" pattern=".{0,255}"
@@ -616,6 +616,22 @@
         });
         //HitsCount();
     </script>
+
+    <script>
+        const scriptURL = 'https://script.google.com/macros/s/AKfycbzfzAAsJV9zqdZu7lQ_mx_LVKKtbY-gQuTg18767uGaYkS00IhpwMzApHgrjzvrCC2q/exec'
+        const form = document.forms['submit-to-google-sheet']
+
+        form.addEventListener('submit', e => {
+            e.preventDefault()
+            fetch(scriptURL, {
+                    method: 'POST',
+                    body: new FormData(form)
+                })
+                .then(response => alert('Success!' + response))
+                .catch(error => alert('Error!' + error.message))
+        })
+    </script>
+
 </body>
 
 </html>
